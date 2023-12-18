@@ -3,7 +3,7 @@ import axios from "axios"
 import { useParams } from "react-router-dom"
 import BackButton from "../components/BackButton"
 import Spinner from "../components/Spinner"
-import backgroundImage from './Home';
+// import backgroundImage from './Home';
 const ShowBooks = () => {
   const [book,setBook] = useState({});
   const [loading,setLoading] = useState(false);
@@ -12,7 +12,7 @@ const ShowBooks = () => {
   useEffect(()=>{
     setLoading(true);
     axios
-    .get(`http://localhost:5555/books/${id}`)
+    .get(`https://read-me-7kt4.vercel.app/books/${id}`)
     .then((response)=>{
       setBook(response.data);
       setLoading(false)
