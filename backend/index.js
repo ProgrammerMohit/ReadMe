@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(cors());
 // Custom Method
 // app.use(cors({
-//     origin: 'http://localhost:3000',
+//     origin: 'https://read-me-7kt4.vercel.app',
 //     methods: ['GET','POST','PUT','DELETE'],
 //     allowedHeaders: ['Content-Type'],
 // }))
